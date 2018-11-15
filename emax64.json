@@ -1,0 +1,31 @@
+{
+    "homepage": "https://github.com/m-parashar/emax64",
+    "license": "GPLv3",
+    "version": "20180529",
+    "url": "https://github.com/m-parashar/emax64/releases/download/20180529/emax64-bin-20180529.7z",
+    "hash": "d93ebd45d50fadb0b50552fa02488c572d0bada92fc5665dcef371fe118d4a0d",
+    "extract_dir": ".",
+    "bin": [
+        "emax64\\bin\\runemacs.exe",
+        "emax64\\bin\\emacs.exe",
+        "emax64\\bin\\emacsclient.exe",
+        "emax64\\bin\\emacsclientw.exe",
+        "emax64\\bin\\etags.exe",
+        "emax64\\bin\\ctags.exe"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/m-parashar/emax64/releases/download/$version/emax64-bin-$version.7z"
+    },
+    "shortcuts": [
+        [
+            "emax64\\bin\\runemacs.exe",
+            "Emacs"
+        ],
+        [
+            "emax64\\bin\\emacsclientw.exe",
+            "Emacs Client",
+            "-c -n -a \"\""
+        ]
+    ]
+}
