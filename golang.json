@@ -1,0 +1,42 @@
+{
+    "version": "1.11.2",
+    "homepage": "https://golang.org",
+    "license": "BSD-3-Clause",
+    "extract_dir": "go",
+    "env_set": {
+        "GOROOT": "$dir"
+    },
+    "bin": [
+        "bin/go.exe",
+        "bin/gofmt.exe",
+        "bin/godoc.exe"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://storage.googleapis.com/golang/go1.11.2.windows-amd64.zip",
+            "hash": "086c59df0dce54d88f30edd50160393deceb27e73b8d6b46b9ee3f88b0c02e28"
+        },
+        "32bit": {
+            "url": "https://storage.googleapis.com/golang/go1.11.2.windows-386.zip",
+            "hash": "c0c5ab568d9cf260cd7d281e0a489ef91f4b943813d99dac78b61607dca17283"
+        }
+    },
+    "checkver": "Build version go([\\d\\.]+)\\.",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://storage.googleapis.com/golang/go$version.windows-amd64.zip"
+            },
+            "32bit": {
+                "url": "https://storage.googleapis.com/golang/go$version.windows-386.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    },
+    "notes": [
+        "Your GOROOT has been set to: $dir",
+        "You can run 'go env GOROOT' to view this at any time."
+    ]
+}
