@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/m-parashar/emax64",
     "license": "GPLv3",
-    "version": "20180529",
-    "url": "https://github.com/m-parashar/emax64/releases/download/20180529/emax64-bin-20180529.7z",
-    "hash": "d93ebd45d50fadb0b50552fa02488c572d0bada92fc5665dcef371fe118d4a0d",
+    "version": "emax64-26.2-20190417",
+    "url": "https://github.com/m-parashar/emax64/releases/download/emax64-26.2-20190417/emax64-bin-26.2.7z",
+    "hash": "90a2043e659671b3941605d486a507d6f4ed81a495528669203ca60fcabc5c14",
     "extract_dir": ".",
     "bin": [
         "emax64\\bin\\runemacs.exe",
@@ -20,7 +20,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/m-parashar/emax64/releases/latest",
-        "re": "https://github.com/m-parashar/emax64/releases/download/(?<version>[\\d\\w.-]+)/emax64-bin-(?<short>[\\d.]+).*\\.7z"
+        "re": "https://github.com/m-parashar/emax64/releases/download/(?<version>[\\d\\w.-]+)/emax64-bin-(?<short>[\\d.]+).7z"
     },
     "autoupdate": {
         "url": "https://github.com/m-parashar/emax64/releases/download/$version/emax64-bin-$matchShort.7z"
