@@ -4,8 +4,8 @@
     "version": "0.0.4",
     "url": "https://github.com/Paerhati/proton-releases/releases/download/0.0.4/proton.zip",
     "hash": "4e824f23b0c9f3c11610020cd0f8dc9a7efcfa953fa7ca5fe90dab7c3e7bc58f",
-    "extract_dir": ".",
-    "bin": "proton-$version-win32-x64\\proton-win32-x64\\proton.exe",
+    "extract_dir": "proton-0.0.4-win32-x64",
+    "bin": "proton-win32-x64\\proton.exe",
     "checkver": {
         "github": "https://github.com/Paerhati/proton-releases"
     },
@@ -14,8 +14,8 @@
     },
     "shortcuts": [
         [
-            "proton-$version-win32-x64\\proton-win32-x64\\proton.exe",
-            "Emacs"
+            "proton-win32-x64\\proton.exe",
+            "Proton Launcher"
         ]
     ]
 }
