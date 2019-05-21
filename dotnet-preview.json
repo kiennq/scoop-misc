@@ -1,0 +1,34 @@
+{
+    "version": "3.0.100-preview5-011568",
+    "homepage": "https://www.microsoft.com/net/",
+    "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/3.0.100-preview5-011568/dotnet-sdk-3.0.100-preview5-011568-win-x64.zip",
+            "hash": "sha512:6171b234ff20849a970f750e39f3c5a968f702eacaac5d04d1ac8e2c01c779f3a4993eca42245c04e02ed063e8d59989db47796f334275f5611c40703278cbf5"
+        },
+        "32bit": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/3.0.100-preview5-011568/dotnet-sdk-3.0.100-preview5-011568-win-x86.zip",
+            "hash": "sha512:d8f50b7d0d8cab5e34146d4a9f895891bd2785d0d39358eb16bc1052695bbffe01227311c24cd784ba62c6be6ddb2a10cba1d5eca821c48c7c7f7860c4268413"
+        }
+    },
+    "bin": "dotnet.exe",
+    "checkver": {
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
+        "jsonpath": "$..releases-index[?(@.support-phase == 'preview')].latest-sdk"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x64.zip"
+            },
+            "32bit": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sdk-sha.txt"
+        }
+    }
+}
