@@ -1,0 +1,31 @@
+{
+    "homepage": "https://github.com/microsoft/python-language-server",
+    "license": "Apache-2.0",
+    "version": "2019.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kiennq/python-ls-ms-releases/releases/download/2019.1/win10-x64.zip",
+            "hash": "d729921aacd7b0b3d2c055dd58ad97c9604f41e0ef64a6162374538949bc5ed4",
+            "extract_dir": "win10-x64/publish"
+        },
+        "32bit": {
+            "url": "https://github.com/kiennq/python-ls-ms-releases/releases/download/2019.1/win10-x86.zip",
+            "hash": "da2db57834570e57147015c7078bc8614fbf1fe67ed9fe572a1098f67a76a373",
+            "extract_dir": "win10-x86/publish"
+        }
+    },
+    "bin": "Microsoft.Python.LanguageServer.exe",
+    "checkver": {
+        "github": "https://github.com/kiennq/python-ls-ms-releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kiennq/python-ls-ms-releases/releases/download/$version/win10-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/kiennq/python-ls-ms-releases/releases/download/$version/win10-x86.zip"
+            }
+        }
+    }
+}
