@@ -5,12 +5,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/kiennq/python-ls-ms-releases/releases/download/2019.1/win10-x64.zip",
-            "hash": "d729921aacd7b0b3d2c055dd58ad97c9604f41e0ef64a6162374538949bc5ed4",
+            "hash": "8bd3240d29589394b6a49ed6248ee6b17d7f5bdeb8fb5f447ac12389cc8db1a3",
             "extract_dir": "win10-x64/publish"
         },
         "32bit": {
             "url": "https://github.com/kiennq/python-ls-ms-releases/releases/download/2019.1/win10-x86.zip",
-            "hash": "da2db57834570e57147015c7078bc8614fbf1fe67ed9fe572a1098f67a76a373",
+            "hash": "02e7603ea814b94fef98668de0e7a064df34bfbb6457a0b45f34a577cd13602f",
             "extract_dir": "win10-x86/publish"
         }
     },
