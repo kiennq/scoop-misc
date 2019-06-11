@@ -1,0 +1,54 @@
+{
+    "homepage": "https://www.gnu.org/software/emacs/",
+    "license": "GPL-3.0-only",
+    "version": "27.0.50-snapshot-2019-06-08",
+    "architecture": {
+        "64bit": {
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.50-snapshot-2019-06-08-x86_64.zip",
+            "hash": "3528648e891f15afa5264b70278ed408d34f6939b713958de1474f33a79c45e7"
+        },
+        "32bit": {
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.50-snapshot-2019-06-08-i686.zip",
+            "hash": "c96c951775336c8893a4a75cdfaf6ac2f6bc632538707e5986250482c581dc61"
+        }
+    },
+    "extract_dir": ".",
+    "bin": [
+        "bin\\runemacs.exe",
+        "bin\\emacs.exe",
+        "bin\\emacsclient.exe",
+        "bin\\emacsclientw.exe",
+        "bin\\etags.exe",
+        "bin\\ctags.exe",
+        [
+            "bin\\emacsclientw.exe",
+            "emw",
+            "-c -n -a \"\""
+        ]
+    ],
+    "checkver": {
+        "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/",
+        "re": "emacs-([\\d\\w.-]+)-x86_64.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version-x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version-i686.zip"
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "bin\\runemacs.exe",
+            "Emacs"
+        ],
+        [
+            "bin\\emacsclientw.exe",
+            "Emacs Client",
+            "-c -n -a \"\""
+        ]
+    ]
+}
