@@ -1,0 +1,20 @@
+{
+    "homepage": "https://harfbuzz.github.io/",
+    "license": "Old MIT",
+    "version": "2.5.1",
+    "url": "https://github.com/harfbuzz/harfbuzz/releases/download/2.5.1/harfbuzz-2.5.1-win32.zip",
+    "hash": "0cd9d6d8258a9bb13e25f606a5749214d17c410b714c5f7ebb1ffc36efc89175",
+    "extract_dir": "harfbuzz-2.5.1-win32",
+    "bin": [
+        "hb-shape.exe",
+        "hb-subset.exe",
+        "hb-view.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/harfbuzz/harfbuzz"
+    },
+    "autoupdate": {
+        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-$version-win32.zip",
+        "extract_dir": "harfbuzz-$version-win32"
+    }
+}
