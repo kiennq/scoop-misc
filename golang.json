@@ -9,8 +9,7 @@
     },
     "bin": [
         "bin/go.exe",
-        "bin/gofmt.exe",
-        "bin/godoc.exe"
+        "bin/gofmt.exe"
     ],
     "architecture": {
         "64bit": {
@@ -41,7 +40,6 @@
     },
     "notes": [
         "Your GOROOT has been set to: $dir",
-        "You can run 'go env GOROOT' to view this at any time.",
-        "\"$env:USERPROFILE\\go\\bin)\" has been added to your PATH."
+        "You can run 'go env GOROOT' to view this at any time."
     ]
 }
