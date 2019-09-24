@@ -5,7 +5,7 @@
     "url": "https://github.com/kiennq/scoop-misc/releases/download/v1909.16/CascadiaCode.zip",
     "hash": "5af0febfd09af13cb5da7c727310389a50fa4b75bd28a0e2a7f376b4689f8ad8",
     "checkver": "github",
-    "depends": "sudo",
+    "depends": "wsudo",
     "autoupdate": {
         "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/CascadiaCode.zip"
     },
