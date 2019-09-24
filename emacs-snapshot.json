@@ -13,6 +13,9 @@
         }
     },
     "extract_dir": ".",
+    "env_set": {
+        "EMACS_DIR": "$dir"
+    },
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",

@@ -5,6 +5,9 @@
     "url": "https://github.com/m-parashar/emax64/releases/download/emax64-26.2-20190417/emax64-bin-26.2.7z",
     "hash": "90a2043e659671b3941605d486a507d6f4ed81a495528669203ca60fcabc5c14",
     "extract_dir": ".",
+    "env_set": {
+        "EMACS_DIR": "$dir"
+    },
     "bin": [
         "emax64\\bin\\runemacs.exe",
         "emax64\\bin\\emacs.exe",
