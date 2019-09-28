@@ -13,7 +13,14 @@
             "hash": "40768d305af4b8bedc2409ac3d30cbaf39e1a8f16daaf8adbe443cd6d1f115a0"
         }
     },
-    "bin": "pwsh.exe",
+    "bin": [
+        "pwsh.exe",
+        [
+            "pwsh.exe",
+            "pwsh-bare",
+            "-nop -nol -noni -ex bypass"
+        ]
+    ],
     "shortcuts": [
         [
             "pwsh.exe",
