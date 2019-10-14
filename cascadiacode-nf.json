@@ -7,7 +7,7 @@
     "checkver": "github",
     "depends": "wsudo",
     "autoupdate": {
-        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/CascadiaCode.zip"
+        "url": "https://github.com/kiennq/scoop-misc/releases/download/v$version/CascadiaCode.zip"
     },
     "installer": {
         "script": [
