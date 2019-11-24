@@ -16,7 +16,9 @@
     "bin": "dotnet.exe",
     "checkver": {
         "url": "https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json",
-        "jsonpath": "$..releases-index[?(@.support-phase == 'preview' || @.support-phase == 'current')].latest-sdk"
+        "jsonpath": "$..releases-index[?(@.support-phase == 'preview')]",
+        "regex": "\"latest-release\": \"(?<shaver>[^\"]+)\",(.|\n)*\"latest-sdk\": \"(?<version>[^\"]+)\",",
+        "replace": "${version}"
     },
     "autoupdate": {
         "architecture": {
@@ -28,7 +30,7 @@
             }
         },
         "hash": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sdk-sha.txt"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchShaver-sha.txt"
         }
     }
 }
