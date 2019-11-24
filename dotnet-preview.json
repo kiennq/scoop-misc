@@ -17,10 +17,7 @@
     "checkver": {
         "url": "https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json",
         "jsonpath": "$..releases-index[?(@.support-phase == 'preview')]",
-        "regex": [
-            "\"latest-release\": \"(?<shaver>[^\"]+)\",(.|",
-            ")*\"latest-sdk\": \"(?<version>[^\"]+)\","
-        ],
+        "regex": "\"latest-release\": \"(?<shaver>[^\"]+)\",(?s:.)*\"latest-sdk\": \"(?<version>[^\"]+)\",",
         "replace": "${version}"
     },
     "autoupdate": {
