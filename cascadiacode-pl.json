@@ -1,9 +1,9 @@
 {
-    "version": "1910.04",
+    "version": "1911.21",
     "license": "OFL",
     "homepage": "https://github.com/microsoft/cascadia-code/",
     "url": "https://github.com/microsoft/cascadia-code/releases/download/v1911.21/CascadiaPL.ttf",
-    "hash": "db415cece1ae8f36847ecf40e1d6a6f989dc4ecd988c0cdc493cddb4aed60315",
+    "hash": "5b612e4e3bec453bab26299eac8330f7cc68b99d685ab86c01cdc54d5d6203e9",
     "checkver": "github",
     "depends": "wsudo",
     "autoupdate": {
