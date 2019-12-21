@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "version": "3.1.100-preview3-014645",
     "homepage": "https://www.microsoft.com/net/",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
@@ -16,8 +17,8 @@
     "bin": "dotnet.exe",
     "checkver": {
         "url": "https://raw.githubusercontent.com/dotnet/core/master/release-notes/releases-index.json",
-        "jsonpath": "$..releases-index[?(@.support-phase == 'preview')]",
-        "regex": "\"latest-release\": \"(?<shaver>[^\"]+)\",(?s:.)*\"latest-sdk\": \"(?<version>[^\"]+)\",",
+        "jsonpath": "$..releases-index[0]",
+        "regex": "\"latest-release\": \"(?<shaver>[^\"]+)\",(?s:.)*?\"latest-sdk\": \"(?<version>[^\"]+)\",",
         "replace": "${version}"
     },
     "autoupdate": {
@@ -32,5 +33,5 @@
         "hash": {
             "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchShaver-sha.txt"
         }
-    }
+    },
 }
