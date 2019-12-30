@@ -2,15 +2,15 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "27.0.50-snapshot-2019-11-11",
+    "version": "27.0.60-snapshot-emacs-27-2019-12-28",
     "architecture": {
         "64bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.50-snapshot-2019-11-11-x86_64.zip",
-            "hash": "ab34436d4098b12ff4027ef0720c92297daf0259075a6b1f68821a1eaca31661"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.60-snapshot-emacs-27-2019-12-28-x86_64.zip",
+            "hash": "3eebbe7387bcf401293262a715506fec5d1ebb740488ac7133179d1ed930df42"
         },
         "32bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.50-snapshot-2019-11-11-i686.zip",
-            "hash": "8d00658e7c3b0f22fd42e04d896dd683ec25e2a30399512b6f56bda71850868b"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.60-snapshot-emacs-27-2019-12-28-i686.zip",
+            "hash": "ff010d27bf511a853f33f141c74e7648894ac5d4fbcbe0607c7bda05c1a0da20"
         }
     },
     "extract_dir": ".",
