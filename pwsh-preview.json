@@ -1,16 +1,16 @@
 {
     "homepage": "https://github.com/PowerShell/PowerShell",
     "description": "PowerShell for every system! https://Microsoft.com/PowerShell",
-    "version": "7.0.0-rc.1",
+    "version": "6.2.4",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0-rc.1/PowerShell-7.0.0-rc.1-win-x64.zip",
-            "hash": "7fa0e17ffc9db6bff0ad1e474127d26c6bbedb30fb3d2122a72d019031c834f4"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v6.2.4/PowerShell-6.2.4-win-x64.zip",
+            "hash": "54af157b57c83731907460f3e24ac60852e7f6a685a748cac8717f3ba18188b6"
         },
         "32bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0-rc.1/PowerShell-7.0.0-rc.1-win-x86.zip",
-            "hash": "9a6da5125223595b2a3fde77ca189d74758c46787a50366bfc1a06d6117d9639"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v6.2.4/PowerShell-6.2.4-win-x86.zip",
+            "hash": "fff26e8a84a74d0af2776e5ffa97c77735f5fc0fd1b219ea8386153affb2a7bb"
         }
     },
     "bin": [
