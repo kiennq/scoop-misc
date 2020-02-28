@@ -1,10 +1,10 @@
 {
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://github.com/m-parashar/emax64",
     "license": "GPLv3",
     "version": "20191225",
     "url": "https://github.com/m-parashar/emax64/releases/download/20191225/emax64-bin-26.3.7z",
     "hash": "475a95a5f7d809225c75874ab11419c7b5926b0ef720cf85cbc17fcd045b0793",
-    "extract_dir": ".",
     "env_set": {
         "EMACS_DIR": "$dir"
     },

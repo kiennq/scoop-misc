@@ -13,7 +13,6 @@
             "hash": "06c92a26d00030645f6465bb3b3a087fa390067fc2a5dcfbdfe9859de0762a43"
         }
     },
-    "extract_dir": ".",
     "env_set": {
         "EMACS_DIR": "$dir"
     },
