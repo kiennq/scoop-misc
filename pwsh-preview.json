@@ -2,16 +2,16 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://github.com/PowerShell/PowerShell",
     "description": "PowerShell for every system! https://Microsoft.com/PowerShell",
-    "version": "7.0.0-rc.3",
+    "version": "7.0.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0-rc.3/PowerShell-7.0.0-rc.3-win-x64.zip",
-            "hash": "c8448f44619517c24df8f392d6ac9e3a1f9589f2c74a3c9eb8cc94b902d78835"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0/PowerShell-7.0.0-win-x64.zip",
+            "hash": "cda2ca2227fbec2c753aa760859667b02007d14646a831bd908b8f749cbcc687"
         },
         "32bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0-rc.3/PowerShell-7.0.0-rc.3-win-x86.zip",
-            "hash": "ff9906d3048c30ce1b15c02880b4531541d472bda25dcb4c6122317dbd0bd5f1"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0/PowerShell-7.0.0-win-x86.zip",
+            "hash": "f33e852f7721e61ff3bae9fc04f1dfa48ce7b10cd59d649126d5ba9bfad9aecd"
         }
     },
     "bin": [
