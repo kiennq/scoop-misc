@@ -45,7 +45,6 @@
         "bin\\lld.exe",
         "bin\\lldb-argdumper.exe",
         "bin\\lldb-instr.exe",
-        "bin\\lldb-mi.exe",
         "bin\\lldb-vscode.exe",
         "bin\\lldb.exe",
         "bin\\llvm-ar.exe",
