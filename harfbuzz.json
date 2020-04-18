@@ -1,16 +1,16 @@
 {
     "homepage": "https://harfbuzz.github.io/",
     "license": "Old MIT",
-    "version": "2.6.4",
-    "url": "https://github.com/harfbuzz/harfbuzz/releases/download/2.6.4/harfbuzz-2.6.4-win32.zip",
-    "hash": "9b2dcb2434dae31ffa46b28e1d8c6c50ea1d371860d182add70249e7c596a4ad",
-    "extract_dir": "harfbuzz-2.6.4-win32",
+    "version": "2.6.5",
+    "url": "https://github.com/harfbuzz/harfbuzz/releases/download/2.6.5/harfbuzz-win32.zip",
+    "hash": "c723be5bb8fc52f30039e363fde445997a054b8f660e1382e589461b3624b452",
+    "extract_dir": "harfbuzz-2.6.5-win32",
     "env_add_path": ".",
     "checkver": {
         "github": "https://github.com/harfbuzz/harfbuzz"
     },
     "autoupdate": {
-        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-$version-win32.zip",
+        "url": "https://github.com/harfbuzz/harfbuzz/releases/download/$version/harfbuzz-win32.zip",
         "extract_dir": "harfbuzz-$version-win32"
     }
 }
