@@ -2,15 +2,15 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "27.0.90-2",
+    "version": "27.0.91",
     "architecture": {
         "64bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.90-2-x86_64.zip",
-            "hash": "e3fbd154f33677ad954084535d37856903f5992bf0137dccdbea374d0aeb3c64"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.91-x86_64.zip",
+            "hash": "2802b2f216a9379050ce186cb281832dcfe97aa85764332be32933b46ed9ee26"
         },
         "32bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.90-2-i686.zip",
-            "hash": "71b36fbb54d52630dc1b1d127be7ca960ed4654ee0f5f21f32c2c309212c4396"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.91-i686.zip",
+            "hash": "c45a605869bf49877a63314f657efb51a740624d762e5c87f5fb9803f94fd194"
         }
     },
     "env_set": {
