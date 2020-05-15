@@ -31,7 +31,8 @@
     ],
     "checkver": {
         "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/",
-        "re": "emacs-([\\d\\w.-]+)-x86_64.zip"
+        "re": "emacs-([\\d\\w.-]+)-x86_64.zip",
+        "reverse": true
     },
     "autoupdate": {
         "architecture": {
