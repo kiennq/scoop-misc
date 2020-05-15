@@ -1,18 +1,20 @@
 {
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "version": "1911.21",
     "license": "OFL",
     "homepage": "https://github.com/microsoft/cascadia-code/",
-    "url": "https://github.com/microsoft/cascadia-code/releases/download/v1911.21/CascadiaPL.ttf",
+    "url": "https://github.com/microsoft/cascadia-code/releases/download/v1911.21/CascadiaCode_2004.30.zip",
     "hash": "5b612e4e3bec453bab26299eac8330f7cc68b99d685ab86c01cdc54d5d6203e9",
+    "extract_dir": "ttf",
     "checkver": "github",
     "depends": "wsudo",
     "autoupdate": {
-        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaPL.ttf"
+        "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode_$version.zip"
     },
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
-            "Get-ChildItem $dir | ForEach-Object {",
+            "Get-ChildItem $dir/*CodePL.* | ForEach-Object {",
             "    New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
             "    Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
             "}"
