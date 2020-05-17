@@ -34,6 +34,23 @@
         "re": "emacs-([\\d\\w.-]+)-x86_64.zip",
         "reverse": true
     },
+    "depends": ["zstd", "7zip", "aria2"],
+    "post_install": [
+        "if ($architecture -eq \"64bit\") {",
+        "    Push-Location \"$dir\"",
+        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-gcc-libs-10.1.0-2-any.pkg.tar.zst'",
+        "    zstd -f --rm -d mingw-w64-x86_64-gcc-libs-10.1.0-2-any.pkg.tar.zst",
+        "    tar -xf mingw-w64-x86_64-gcc-libs-10.1.0-2-any.pkg.tar",
+        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz'",
+        "    7z x mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz -y",
+        "    tar -xf mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar",
+        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz'",
+        "    7z x mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz -y",
+        "    tar -xf mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar",
+        "    xcopy mingw64\\bin\\lib*.dll bin\\* /y /d",
+        "    Pop-Location",
+        "}"
+    ],
     "autoupdate": {
         "architecture": {
             "64bit": {
