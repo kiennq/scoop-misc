@@ -2,15 +2,15 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "27.0.91",
+    "version": "28.0.50-snapshot-2020-06-26",
     "architecture": {
         "64bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.91-x86_64.zip",
-            "hash": "2802b2f216a9379050ce186cb281832dcfe97aa85764332be32933b46ed9ee26"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2020-06-26-x86_64.zip",
+            "hash": "71de17c55d2554649a7d42bafde456fed56d834f614508bffc976369ffc18752"
         },
         "32bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.0.91-i686.zip",
-            "hash": "c45a605869bf49877a63314f657efb51a740624d762e5c87f5fb9803f94fd194"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2020-06-26-i686.zip",
+            "hash": "2ff9801097c92b0251e653f06c190fa2af2401a320ed3fb470c565b18dfc8745"
         }
     },
     "env_set": {
@@ -34,19 +34,27 @@
         "re": "emacs-([\\d\\w.-]+)-x86_64.zip",
         "reverse": true
     },
-    "depends": ["zstd", "7zip", "aria2"],
+    "depends": [
+        "zstd",
+        "7zip",
+        "aria2"
+    ],
     "post_install": [
         "if ($architecture -eq \"64bit\") {",
         "    Push-Location \"$dir\"",
-        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-gcc-libs-10.1.0-2-any.pkg.tar.zst'",
-        "    zstd -f --rm -d mingw-w64-x86_64-gcc-libs-10.1.0-2-any.pkg.tar.zst",
-        "    tar -xf mingw-w64-x86_64-gcc-libs-10.1.0-2-any.pkg.tar",
+
         "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz'",
         "    7z x mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz -y",
         "    tar -xf mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar",
+
         "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz'",
         "    7z x mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz -y",
         "    tar -xf mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar",
+
+        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-jansson-2.12-1-any.pkg.tar.xz'",
+        "    7z x mingw-w64-x86_64-jansson-2.12-1-any.pkg.tar.xz -y",
+        "    tar -xf mingw-w64-x86_64-jansson-2.12-1-any.pkg.tar",
+
         "    xcopy mingw64\\bin\\lib*.dll bin\\* /y /d",
         "    Pop-Location",
         "}"
