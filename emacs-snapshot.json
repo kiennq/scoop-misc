@@ -2,15 +2,15 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "28.0.50-snapshot-2020-06-26",
+    "version": "28.0.50-snapshot-2020-07-05",
     "architecture": {
         "64bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2020-06-26-x86_64.zip",
-            "hash": "71de17c55d2554649a7d42bafde456fed56d834f614508bffc976369ffc18752"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2020-07-05-x86_64.zip",
+            "hash": "727cc9ce6c29d2b8e2b2e33d1b7176855e7b3dc70d4f92ba314567748bc6d5b6"
         },
         "32bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2020-06-26-i686.zip",
-            "hash": "2ff9801097c92b0251e653f06c190fa2af2401a320ed3fb470c565b18dfc8745"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2020-07-05-i686.zip",
+            "hash": "d4f20f6d2cd9366867bc313088425410fc5ef9d3f511c67f37f0680f516a930b"
         }
     },
     "env_set": {
@@ -42,19 +42,15 @@
     "post_install": [
         "if ($architecture -eq \"64bit\") {",
         "    Push-Location \"$dir\"",
-
         "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz'",
         "    7z x mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz -y",
         "    tar -xf mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar",
-
         "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz'",
         "    7z x mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz -y",
         "    tar -xf mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar",
-
         "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-jansson-2.12-1-any.pkg.tar.xz'",
         "    7z x mingw-w64-x86_64-jansson-2.12-1-any.pkg.tar.xz -y",
         "    tar -xf mingw-w64-x86_64-jansson-2.12-1-any.pkg.tar",
-
         "    xcopy mingw64\\bin\\lib*.dll bin\\* /y /d",
         "    Pop-Location",
         "}"
