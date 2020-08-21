@@ -1,0 +1,76 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
+    "homepage": "https://www.gnu.org/software/emacs/",
+    "license": "GPL-3.0-only",
+    "version": "27.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.1-x86_64.zip",
+            "hash": "3b0b2e9355fccd07f67bc7272cabeaa6ae82f8f3cbe54008b611a331f61b4c7d"
+        },
+        "32bit": {
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-27/emacs-27.1-i686.zip",
+            "hash": "bd99eae036b229e6105c070499c63994870c839c70404a12c04992e0c0fa0b5b"
+        }
+    },
+    "env_set": {
+        "EMACS_DIR": "$dir"
+    },
+    "bin": [
+        "bin\\runemacs.exe",
+        "bin\\emacs.exe",
+        "bin\\emacsclient.exe",
+        "bin\\emacsclientw.exe",
+        "bin\\etags.exe",
+        "bin\\ctags.exe",
+        [
+            "bin\\emacsclientw.exe",
+            "emw",
+            "-c -n -a \"\""
+        ]
+    ],
+    "checkver": {
+        "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/",
+        "re": "emacs-([\\d\\w.-]+)-x86_64.zip",
+        "reverse": true
+    },
+    "depends": [
+        "zstd",
+        "7zip",
+        "aria2"
+    ],
+    "post_install": [
+        "if ($architecture -eq \"64bit\") {",
+        "    Push-Location \"$dir\"",
+        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz'",
+        "    7z x mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar.xz -y",
+        "    tar -xf mingw-w64-x86_64-glib2-2.64.2-1-any.pkg.tar",
+        "    aria2c 'http://repo.msys2.org/mingw/x86_64/mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz'",
+        "    7z x mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar.xz -y",
+        "    tar -xf mingw-w64-x86_64-pcre-8.44-1-any.pkg.tar",
+        "    xcopy mingw64\\bin\\lib*.dll bin\\* /y /d",
+        "    Pop-Location",
+        "}"
+    ],
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version-x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version-i686.zip"
+            }
+        }
+    },
+    "shortcuts": [
+        [
+            "bin\\runemacs.exe",
+            "Emacs"
+        ],
+        [
+            "bin\\emacsclientw.exe",
+            "Emacs Client",
+            "-c -n -a \"\""
+        ]
+    ]
+}
