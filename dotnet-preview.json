@@ -1,17 +1,17 @@
 {
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
-    "version": "5.0.100-preview.7.20366.6",
+    "version": "5.0.100-preview.8.20417.9",
     "homepage": "https://www.microsoft.com/net/",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.7.20366.6/dotnet-sdk-5.0.100-preview.7.20366.6-win-x64.zip",
-            "hash": "sha512:a77458590193d71f4c7f483b765fc16495fbb9a83f79cfb943ce46a67c3e9049eef7da87398d8637a4f547cb57a64857584b2b43009593d24daea9f5af6d31cc"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.8.20417.9/dotnet-sdk-5.0.100-preview.8.20417.9-win-x64.zip",
+            "hash": "sha512:dab0eb2c2aa29fc8d952e155a9f744e48f6155cb2dfbc1240ade40da22c882df299274a770d3d4002a8e22cb17a45b1aa63baa4edd7bfb70d41f8bbeee4a105d"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.7.20366.6/dotnet-sdk-5.0.100-preview.7.20366.6-win-x86.zip",
-            "hash": "sha512:eba7c98457d91fecdcd303961866033415631f28088ebd3b43e49c2356aab89b77709c144a8c28939d53edeaab8bf26c9681de79e9df7fb73350f4b92529f497"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/5.0.100-preview.8.20417.9/dotnet-sdk-5.0.100-preview.8.20417.9-win-x86.zip",
+            "hash": "sha512:c7dd10d1ffb8d8edd29e6ca34c1964202ddd8d151be3dd60a13d2d73409b9834ebf923119f43e7d4fcf6ffcb9a3a1149b1c8e2f20b302633d3102b392a8c784c"
         }
     },
     "bin": "dotnet.exe",
