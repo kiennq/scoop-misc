@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
-    "version": "2009.14",
+    "version": "2009.22",
     "license": "OFL",
     "homepage": "https://github.com/microsoft/cascadia-code/",
-    "url": "https://github.com/microsoft/cascadia-code/releases/download/v2009.14/CascadiaCode-2009.14.zip",
-    "hash": "7a08523d2d68ef3c6efdd5336dd49aa2698dd348fa4734463a17719632bbc3c8",
+    "url": "https://github.com/microsoft/cascadia-code/releases/download/v2009.22/CascadiaCode-2009.22.zip",
+    "hash": "801bcc94b79ae46bc573c9c07feb44d581e12d15f79b176be165f00f8fdf9846",
     "extract_dir": "ttf",
     "checkver": "github",
     "depends": "wsudo",
