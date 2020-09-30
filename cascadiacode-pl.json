@@ -7,7 +7,6 @@
     "hash": "801bcc94b79ae46bc573c9c07feb44d581e12d15f79b176be165f00f8fdf9846",
     "extract_dir": "ttf",
     "checkver": "github",
-    "depends": "wsudo",
     "autoupdate": {
         "url": "https://github.com/microsoft/cascadia-code/releases/download/v$version/CascadiaCode-$version.zip"
     },
