@@ -34,6 +34,9 @@
         "re": "emacs-([\\d\\w.-]+)-x86_64.zip",
         "reverse": true
     },
+    "depends": [
+        "zstd"
+    ],
     "autoupdate": {
         "architecture": {
             "64bit": {
