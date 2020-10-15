@@ -13,9 +13,9 @@
     "installer": {
         "script": [
             "if(!(is_admin)) { error \"Admin rights are required, please run 'sudo scoop install $app'\"; exit 1 }",
-            "Get-ChildItem $dir/*CodePL.* | ForEach-Object {",
+            "Get-ChildItem $dir/*CodePL* -Recurse | ForEach-Object {",
             "    New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts' -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $_.Name -Force | Out-Null",
-            "    Copy-Item $_.FullName -destination \"$env:windir\\Fonts\"",
+            "    Copy-Item $_.FullName -destination \"$env:windir\\Fonts\" -Force -ErrorAction SilentlyContinue",
             "}"
         ]
     },
