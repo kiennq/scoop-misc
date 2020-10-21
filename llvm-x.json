@@ -27,7 +27,7 @@
         "bin\\clang-doc.exe",
         "bin\\clang-extdef-mapping.exe",
         "bin\\clang-format.exe",
-        "bin\\clang-import-test.exe",
+        // "bin\\clang-import-test.exe",
         "bin\\clang-include-fixer.exe",
         "bin\\clang-move.exe",
         "bin\\clang-offload-bundler.exe",
