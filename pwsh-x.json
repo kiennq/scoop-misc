@@ -29,8 +29,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/PowerShell/PowerShell/releases",
-        "re": "/releases/tag/(?:v)?([\\d.\\w.-]+)"
+        "github": "https://github.com/PowerShell/PowerShell/releases"
     },
     "autoupdate": {
         "architecture": {

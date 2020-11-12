@@ -1,5 +1,4 @@
 {
-    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "version": "11.0.0",
     "description": "Collection of modular and reusable compiler and toolchain technologies.",
     "homepage": "https://www.llvm.org/",
@@ -27,7 +26,6 @@
         "bin\\clang-doc.exe",
         "bin\\clang-extdef-mapping.exe",
         "bin\\clang-format.exe",
-        // "bin\\clang-import-test.exe",
         "bin\\clang-include-fixer.exe",
         "bin\\clang-move.exe",
         "bin\\clang-offload-bundler.exe",
