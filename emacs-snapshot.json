@@ -2,15 +2,15 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "28.0.50-snapshot-2021-01-04",
+    "version": "28.0.50-snapshot-feature_dll-only-windows-2021-01-09",
     "architecture": {
         "64bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2021-01-04-x86_64.zip",
-            "hash": "87e06aca1afccc5d368d861d54bb7f1392e5c35f98ec9dd8de7b3c3c5eb448c0"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-feature_dll-only-windows-2021-01-09-x86_64.zip",
+            "hash": "84cf26405ee65f4c6b122bf8d74878790d5dc882d49847dcba4f4de0d28ec96d"
         },
         "32bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2021-01-04-i686.zip",
-            "hash": "3bc8ea3e4110198007b5cc186f045d07f9a1b1219cd5598e0b9afad70544c573"
+            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-feature_dll-only-windows-2021-01-09-i686.zip",
+            "hash": "34abf6748181408ed20b2ad69ca4e4b84e840f64919a898de42b66a287efb615"
         }
     },
     "env_set": {
