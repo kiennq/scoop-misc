@@ -2,17 +2,9 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "28.0.50-snapshot-feature_dll-only-windows-2021-01-09",
-    "architecture": {
-        "64bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-feature_dll-only-windows-2021-01-09-x86_64.zip",
-            "hash": "84cf26405ee65f4c6b122bf8d74878790d5dc882d49847dcba4f4de0d28ec96d"
-        },
-        "32bit": {
-            "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-feature_dll-only-windows-2021-01-09-i686.zip",
-            "hash": "34abf6748181408ed20b2ad69ca4e4b84e840f64919a898de42b66a287efb615"
-        }
-    },
+    "version": "28.0.50-snapshot-2021-01-15",
+    "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2021-01-15.zip",
+    "hash": "035eb2cc1a5171852c1485aa4cc22f716d50a6842296480a43aaf2e9501de774",
     "env_set": {
         "EMACS_DIR": "$dir"
     },
@@ -31,18 +23,11 @@
     ],
     "checkver": {
         "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/",
-        "re": "emacs-([\\d\\w.-]+)-x86_64.zip",
+        "re": "emacs-([\\d\\w.-]+).zip",
         "reverse": true
     },
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version-x86_64.zip"
-            },
-            "32bit": {
-                "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version-i686.zip"
-            }
-        }
+        "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-$majorVersion/emacs-$version.zip"
     },
     "shortcuts": [
         [
