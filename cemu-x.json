@@ -29,7 +29,8 @@
         "gameProfiles",
         "graphicPacks",
         "mlc01",
-        "shaderCache\\transferable"
+        "shaderCache\\transferable",
+        "sharedFonts"
     ],
     "suggest": {
         "vcredist": "extras/vcredist2015",
