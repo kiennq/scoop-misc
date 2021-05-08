@@ -1,9 +1,9 @@
 {
     "homepage": "https://harfbuzz.github.io/",
     "license": "Old MIT",
-    "version": "2.8.0",
-    "url": "https://github.com/harfbuzz/harfbuzz/releases/download/2.8.0/harfbuzz-win32-2.8.0.zip",
-    "hash": "9b4055bc08df8402db439ffa7ebd6c1497877ca0f8eff45f9ab3edda8d5cf5f9",
+    "version": "2.8.1",
+    "url": "https://github.com/harfbuzz/harfbuzz/releases/download/2.8.1/harfbuzz-win32-2.8.1.zip",
+    "hash": "76b83e89f9ec92aefa4f71818e92c84d1af98a35a5b007ffceb9c3c83e5ff96a",
     "env_add_path": ".",
     "checkver": {
         "github": "https://github.com/harfbuzz/harfbuzz"
