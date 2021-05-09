@@ -5,9 +5,6 @@
     "version": "28.0.50-snapshot-2021-01-15",
     "url": "https://alpha.gnu.org/gnu/emacs/pretest/windows/emacs-28/emacs-28.0.50-snapshot-2021-01-15.zip",
     "hash": "035eb2cc1a5171852c1485aa4cc22f716d50a6842296480a43aaf2e9501de774",
-    "env_set": {
-        "EMACS_DIR": "$dir"
-    },
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",

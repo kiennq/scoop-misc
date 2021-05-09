@@ -13,9 +13,6 @@
             "hash": "626792ea6c4c5347e1f17960072440af1cb05cb6767389fc8195a744a0b428ca"
         }
     },
-    "env_set": {
-        "EMACS_DIR": "$dir"
-    },
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",
