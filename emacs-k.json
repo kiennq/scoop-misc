@@ -2,9 +2,9 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://github.com/kiennq/emacs-build",
     "license": "GPLv3",
-    "version": "20200930",
+    "version": "211105.99b7889",
     "url": "https://github.com/kiennq/emacs-build/releases/download/v0.211105.99b7889/emacs-master-211105.99b7889-x86_64-full.zip",
-    "hash": "5b77180cc93d697e7acbf3b90d8ad229907c078dade9de4e4d922cc441391b73",
+    "hash": "2e7f2b31153eefe5c35e31030fc864dfdd32d83c3496141448def35119553d02",
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",
@@ -20,7 +20,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/kiennq/emacs-build/releases/latest",
-        "re": "emacs-master-([\\d\\w.-]+)-x86_64-full.zip",
+        "re": "emacs-master-([\\d\\w.-]+)-x86_64-full.zip"
     },
     "autoupdate": {
         "url": "https://github.com/kiennq/emacs-build/releases/download/v0.$version/emacs-master-$version-x86_64-full.zip"
