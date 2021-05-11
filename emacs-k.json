@@ -4,7 +4,7 @@
     "license": "GPLv3",
     "version": "211105.99b7889",
     "url": "https://github.com/kiennq/emacs-build/releases/download/v0.211105.99b7889/emacs-master-211105.99b7889-x86_64-full.zip",
-    "hash": "2e7f2b31153eefe5c35e31030fc864dfdd32d83c3496141448def35119553d02",
+    "hash": "5becbd921844ae378aff04ae04f6ce91f04f4dc66d0bf3746f88a29dfacd131a",
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",
