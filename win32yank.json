@@ -1,0 +1,32 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
+    "homepage": "https://github.com/equalsraf/win32yank",
+    "license": "ISC License",
+    "version": "0.0.3",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/equalsraf/win32yank/releases/download/v0.0.3/win32yank-x64.zip",
+            "hash": "5396aa4239c9ac2f65a6b084ccf588d01bdd6ddb701419b7fda5b97b45846093"
+        },
+        "32bit": {
+            "url": "https://github.com/equalsraf/win32yank/releases/download/v0.0.3/win32yank-x32.zip",
+            "hash": "5396aa4239c9ac2f65a6b084ccf588d01bdd6ddb701419b7fda5b97b45846093"
+        }
+    },
+    "bin": [
+        "win32yank.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/equalsraf/win32yank"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/equalsraf/win32yank/releases/download/v$version/win32yank-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/equalsraf/win32yank/releases/download/v$version/win32yank-x32.zip"
+            }
+        }
+    }
+}
