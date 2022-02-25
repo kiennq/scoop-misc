@@ -16,7 +16,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CapitaineJSparrow/emusak-ui/releases/download/v2.0.9/EmuSAK-win32-x64-$version-portable.zip"
+                "url": "https://github.com/CapitaineJSparrow/emusak-ui/releases/download/v$version/EmuSAK-win32-x64-$version-portable.zip"
             }
         }
     },
