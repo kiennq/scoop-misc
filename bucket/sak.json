@@ -26,5 +26,21 @@
             "SAK.exe",
             "Switch Army Knife"
         ]
+    ],
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\bin\\prod.keys\")) {",
+            "    New-Item \"$dir\\bin\\prod.keys\" -Type File | Out-Null",
+            "    New-Item \"$dir\\bin\\title.keys\" -Type File | Out-Null",
+            "}"
+        ]
+    },
+    "persist": [
+        "bin\\prod.keys",
+        "bin\\title.keys"
+    ],
+    "notes": [
+        "ATTENTION: SAK requires a prod.keys and a title.keys files to function.",
+        "Copy the keys files to the $dir\\bin and $persist_dir\\bin."
     ]
 }
