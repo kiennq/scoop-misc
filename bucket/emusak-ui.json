@@ -2,11 +2,11 @@
     "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
     "homepage": "https://github.com/CapitaineJSparrow/emusak-ui",
     "license": "GPLv3",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CapitaineJSparrow/emusak-ui/releases/download/v2.1.2/EmuSAK-win32-x64-2.1.2-portable.zip",
-            "hash": "2eb3758e89c078a072164f11757cba3d133ba53ba94d70f92d348d33d9e750cc"
+            "url": "https://github.com/CapitaineJSparrow/emusak-ui/releases/download/v2.1.3/EmuSAK-win32-x64-2.1.3-portable.zip",
+            "hash": "8085fa80d8224e6dbdc588edddf925fb3af88061e95685541b3d456c8bf51f29"
         }
     },
     "bin": "EmuSak.exe",
