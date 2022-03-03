@@ -25,5 +25,13 @@
             "EmuSak.exe",
             "EmuSak"
         ]
-    ]
+    ],
+    "persist": [
+        "electron_cache"
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-item \"$persist_dir\\electron_cache\" -ItemType Directory | Out-Null",
+        "}"
+    ],
 }
