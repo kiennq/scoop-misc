@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://neovim.io/",
     "version": "0.8.0-dev+227-g6613f58ce",
     "description": "Vim-fork focused on extensibility and usability",
