@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://www.gnu.org/software/emacs/",
     "license": "GPL-3.0-only",
-    "version": "27.2",
+    "version": "28.1",
     "architecture": {
         "64bit": {
             "url": "http://ftp.gnu.org/gnu/emacs/windows/emacs-27/emacs-27.2-x86_64.zip",
