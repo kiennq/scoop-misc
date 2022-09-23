@@ -37,14 +37,16 @@
         "cemuhook": "cemuhook"
     },
     "checkver": {
-        "regex": "Download latest experimental version \\(v((?<version>[\\d.]+)[\\w]*?),"
+        "url": "https://api.github.com/repos/cemu-project/Cemu/releases",
+        "jsonpath": "$[0].tag_name",
+        "re": "v([\\d\\w.-]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cemu.info/releases/cemu_$matchVersion.zip"
+                "url": "https://github.com/cemu-project/Cemu/releases/download/v$version/cemu-$version-windows-x64.zip"
             }
         },
-        "extract_dir": "cemu_$matchVersion"
+        "extract_dir": "cemu_$version"
     }
 }

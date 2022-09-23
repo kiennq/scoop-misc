@@ -1,29 +1,29 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-    "homepage": "https://github.com/CapitaineJSparrow/emusak-ui",
+    "homepage": "https://github.com/Ecks1337/RyuSAK",
     "license": "GPLv3",
-    "version": "2.1.9",
+    "version": "0.0.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/CapitaineJSparrow/emusak-ui/releases/download/v2.1.9/EmuSAK-win32-x64-2.1.9-portable.zip",
+            "url": "https://github.com/Ecks1337/RyuSAK/releases/download/v1.4.2/RyuSAK-win32-x64-1.4.1.zip",
             "hash": "d7875d97f3c0475bf33f756779f1028a21ecef7ace45f910017e9ad62068f781"
         }
     },
-    "bin": "EmuSak.exe",
+    "bin": "RyuSAK.exe",
     "checkver": {
-        "github": "https://github.com/CapitaineJSparrow/emusak-ui"
+        "github": "https://github.com/Ecks1337/RyuSAK"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/CapitaineJSparrow/emusak-ui/releases/download/v$version/EmuSAK-win32-x64-$version-portable.zip"
+                "url": "https://github.com/Ecks1337/RyuSAK/releases/download/v$version/RyuSAK-win32-x64-$version.zip"
             }
         }
     },
     "shortcuts": [
         [
-            "EmuSak.exe",
-            "EmuSak"
+            "RyuSAK.exe",
+            "RyuSAK"
         ]
     ],
     "persist": "electron_cache",
