@@ -18,7 +18,12 @@
             "-c -n -a \"\""
         ]
     ],
-    "checkver": "github",
+    // using scoop default github checkver will trim the version length
+    "checkver": {
+        "url": "https://api.github.com/repos/kiennq/emacs-build/releases/latest",
+        "jsonpath": "$.tag_name",
+        "re": "v([\\d\\w.-]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/emacs-master-x86_64-full.zip"
     },
