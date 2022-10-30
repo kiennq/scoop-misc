@@ -10,14 +10,14 @@
         }
     },
     "bin": [
-        "bin\\runemacs.exe",
-        "bin\\emacs.exe",
-        "bin\\emacsclient.exe",
-        "bin\\emacsclientw.exe",
-        "bin\\etags.exe",
-        "bin\\ctags.exe",
+        "emacs-$version\\bin\\runemacs.exe",
+        "emacs-$version\\bin\\emacs.exe",
+        "emacs-$version\\bin\\emacsclient.exe",
+        "emacs-$version\\bin\\emacsclientw.exe",
+        "emacs-$version\\bin\\etags.exe",
+        "emacs-$version\\bin\\ctags.exe",
         [
-            "bin\\emacsclientw.exe",
+            "emacs-$version\\bin\\emacsclientw.exe",
             "emw",
             "-c -n -a \"\""
         ]
@@ -37,11 +37,11 @@
     },
     "shortcuts": [
         [
-            "bin\\runemacs.exe",
+            "emacs-$version\\bin\\runemacs.exe",
             "Emacs"
         ],
         [
-            "bin\\emacsclientw.exe",
+            "emacs-$version\\bin\\emacsclientw.exe",
             "Emacs Client",
             "-c -n -a \"\""
         ]
