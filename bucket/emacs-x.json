@@ -9,15 +9,16 @@
             "hash": "7a63e762df0a3ce22d4af41c871009c05596576d335cd32a1819e2467ac7abcc"
         }
     },
+    "extract_dir": "emacs-28.2",
     "bin": [
-        "emacs-$version\\bin\\runemacs.exe",
-        "emacs-$version\\bin\\emacs.exe",
-        "emacs-$version\\bin\\emacsclient.exe",
-        "emacs-$version\\bin\\emacsclientw.exe",
-        "emacs-$version\\bin\\etags.exe",
-        "emacs-$version\\bin\\ctags.exe",
+        "bin\\runemacs.exe",
+        "bin\\emacs.exe",
+        "bin\\emacsclient.exe",
+        "bin\\emacsclientw.exe",
+        "bin\\etags.exe",
+        "bin\\ctags.exe",
         [
-            "emacs-$version\\bin\\emacsclientw.exe",
+            "bin\\emacsclientw.exe",
             "emw",
             "-c -n -a \"\""
         ]
@@ -33,15 +34,16 @@
             "64bit": {
                 "url": "http://ftp.gnu.org/gnu/emacs/windows/emacs-$majorVersion/emacs-$version.zip"
             }
-        }
+        },
+        "extract_dir": "emacs-$version"
     },
     "shortcuts": [
         [
-            "emacs-$version\\bin\\runemacs.exe",
+            "bin\\runemacs.exe",
             "Emacs"
         ],
         [
-            "emacs-$version\\bin\\emacsclientw.exe",
+            "bin\\emacsclientw.exe",
             "Emacs Client",
             "-c -n -a \"\""
         ]
