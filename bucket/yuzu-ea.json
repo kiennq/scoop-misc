@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-    "version": "20230509.7",
+    "version": "20230510.9",
     "description": "Experimental emulator for the Nintendo Switch",
     "homepage": "https://yuzu-emu.org/",
     "license": {
@@ -9,8 +9,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kiennq/yuzu-build/releases/download/ea-20230509.7/yuzu-windows-msvc-20230508-16d244d50.7z",
-            "hash": "c8ba94183a11be2c7f7cdd1e07414f19908669a67fcd6317e1a05d31ad3d9471"
+            "url": "https://github.com/kiennq/yuzu-build/releases/download/ea-20230510.9/yuzu-windows-msvc-20230508-f05cd8249.7z",
+            "hash": "aa3e894aed70cb336ddbd457915c51a9683b514eab414cdd4ec966657a999ab6"
         }
     },
     "extract_dir": "yuzu-windows-msvc-ea",
