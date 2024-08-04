@@ -3,8 +3,8 @@
     "homepage": "https://github.com/kiennq/emacs-build",
     "license": "GPLv3",
     "version": "31.266.20240804.02f5764",
-    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.266.20240804.02f5764/emacs-master-x86_64-full.zip",
-    "hash": "b728a498070f8160aad8c8271a00f48e1b2860430e45d7101cf53daa761c21fe",
+    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.266.20240804.02f5764/emacs-master-ucrt-x86_64-full.zip",
+    "hash": "c91e2c52908fe5a497f6c01f22c4b28621a6a17baf7d35f084ff5c92166e238b",
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",
@@ -23,7 +23,7 @@
         "regex": "/tag/v([\\d\\w.-]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/emacs-master-x86_64-full.zip"
+        "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/emacs-master-ucrt-x86_64-full.zip"
     },
     "shortcuts": [
         [
