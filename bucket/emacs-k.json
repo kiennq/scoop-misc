@@ -2,9 +2,9 @@
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/kiennq/emacs-build",
     "license": "GPLv3",
-    "version": "31.266.20240804.02f5764",
-    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.266.20240804.02f5764/emacs-master-ucrt-x86_64-full.zip",
-    "hash": "c91e2c52908fe5a497f6c01f22c4b28621a6a17baf7d35f084ff5c92166e238b",
+    "version": "31.276.20240805.2332f50",
+    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.276.20240805.2332f50/emacs-master-ucrt-x86_64-full.zip",
+    "hash": "03f7a684b5ebd8846a920d80741e2d13ec33af3a740c6a79ccb6677cd690d712",
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",
