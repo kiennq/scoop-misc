@@ -14,7 +14,6 @@
     "uninstaller": {
         "script": "Get-AppxPackage -Name \"emacs-k\" | Remove-AppxPackage"
     },
-    "notes": "Please install as administrator",
     "checkver": {
         "github": "https://github.com/kiennq/emacs-build",
         "regex": "/tag/v([\\d\\w.-]+)"
