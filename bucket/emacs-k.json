@@ -2,9 +2,9 @@
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/kiennq/emacs-build",
     "license": "GPLv3",
-    "version": "31.302.20240819.7480876",
-    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.302.20240819.7480876/emacs-7480876-ucrt-x86_64.msix",
-    "hash": "94e9a5c8c57369dc4fa99fb987b609b259e7a04f56c43b129f9fae1e08ca8741",
+    "version": "31.305.20240819.4794ea5",
+    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.305.20240819.4794ea5/emacs-4794ea5-ucrt-x86_64.msix",
+    "hash": "b359a808f9f97faecfe89bdfa29d3b73ea14414e2ea52dd81a5e27aaa63cd5cd",
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\\*.msix\" | Add-AppxPackage -AllowUnsigned -ForceApplicationShutdown",
