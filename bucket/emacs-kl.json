@@ -8,7 +8,10 @@
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\\*.msix\" | %{Expand-7zipArchive $_.FullName \"$dir\"}",
-            "Remove-Item -Force \"$dir\\*.msix\""
+            "Remove-Item -Force \"$dir\\*.msix\"",
+            "Push-Location \"$dir\"",
+            "Rename-Item 'bin\\libstdc%2B%2B-6.dll' 'libstdc++-6.dll'",
+            "Pop-Location"
         ]
     },
     "bin": [
