@@ -10,7 +10,7 @@
             "Get-ChildItem \"$dir\\*.msix\" | %{Expand-7zipArchive $_.FullName \"$dir\"}",
             "Remove-Item -Force \"$dir\\*.msix\"",
             "Push-Location \"$dir\"",
-            "Rename-Item 'bin\\libstdc%2B%2B-6.dll' 'libstdc++-6.dll'",
+            "dir 'bin\\*%2b*' | %{ren \"$_\" \"$($_.Name -replace '%2b','+')\"}",
             "Pop-Location"
         ]
     },
