@@ -2,9 +2,9 @@
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/kiennq/emacs-build",
     "license": "GPLv3",
-    "version": "31.398.20260104.c8bc6a825",
-    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.398.20260104.c8bc6a825/emacs-c8bc6a825-ucrt-x86_64-mps.msix",
-    "hash": "d9c938ffe8fc47a1f1135cd6e01a1101b9619d28e46f2dfe09fd96b35d5d77b8",
+    "version": "31.403.20260104.07be03c4e",
+    "url": "https://github.com/kiennq/emacs-build/releases/download/v31.403.20260104.07be03c4e/mingw-w64-ucrt-x86_64_emacs_07be03c4e_mps.msix",
+    "hash": "1cd9a60c6c6eb00fa2c77c7c53b5578ac5de203be045f221f2295ac64f1c1a60",
     "installer": {
         "script": [
             "Get-ChildItem \"$dir\\*.msix\" | %{Expand-7zipArchive $_.FullName \"$dir\"}",
@@ -30,7 +30,7 @@
         "regex": "/tag/v([\\d\\w.-]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/emacs-$buildVersion-ucrt-x86_64-mps.msix"
+        "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/mingw-w64-ucrt-x86_64_emacs_$buildVersion_mps.msix"
     },
     "shortcuts": [
         [
