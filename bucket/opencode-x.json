@@ -1,12 +1,12 @@
 {
-    "version": "1.1.12.43fe793",
+    "version": "1.1.14.de6257a",
     "description": "The open source AI coding agent.",
     "homepage": "https://opencode.ai/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kiennq/opencode/releases/download/v1.1.12.43fe793/opencode-windows-x64.zip",
-            "hash": "9b03519472cbb8ab024a10d4a4752947ca9abb10dfcc313b529b9d8f2124a509"
+            "url": "https://github.com/kiennq/opencode/releases/download/v1.1.14.de6257a/opencode-windows-x64.zip",
+            "hash": "4352f404db97f4377f5b6b6618480ff2f990ac9bc74822ccad9b7f1479876d42"
         }
     },
     "bin": "opencode.exe",
