@@ -18,7 +18,7 @@
     ],
     "checkver": {
         "github": "https://github.com/kiennq/emacs-build",
-        "regex": "(?:/tag/|^)v([\\d\\w.-]+)"
+        "regex": "(?:/tag/|^)v([+\\d\\w.-]+)"
     },
     "autoupdate": {
         "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/mingw-w64-ucrt-x86_64_emacs_$buildVersion_mps_full.zip"
